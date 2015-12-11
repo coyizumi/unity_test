@@ -65,7 +65,7 @@ void test_palindrome_racecar(void)
     TEST_ASSERT_EQUAL_INT(1, str_is_palindrome(test));
 }
 
-// strlen tests --------------------------------------------------------------
+// str_len tests --------------------------------------------------------------
 void test_len_hello(void)
 {
     char test[] = "Hello";
@@ -83,7 +83,7 @@ void test_len_null(void)
     TEST_ASSERT_EQUAL_INT(0, str_len(NULL));
 }
 
-// strchr tests --------------------------------------------------------------
+// str_chr tests --------------------------------------------------------------
 void test_strchr_null(void)
 {
     TEST_ASSERT_NULL(str_chr(NULL, 0));
@@ -122,7 +122,7 @@ void test_strchr_odd(void)
     TEST_ASSERT_TRUE(expected == str_chr(test, 'e'));
 }
 
-// Strrchr tests -------------------------------------------------------------
+// str_rchr tests -------------------------------------------------------------
 void test_strrchr_null(void)
 {
     TEST_ASSERT_NULL(str_rchr(NULL, 0));
@@ -161,6 +161,7 @@ void test_strrchr_odd(void)
     TEST_ASSERT_TRUE(expected == str_rchr(test, 'e'));
 }
 
+// str_cpy tests --------------------------------------------------------------
 void test_cpy_null(void)
 {
     char test[6];
