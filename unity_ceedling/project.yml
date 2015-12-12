@@ -32,7 +32,7 @@
   :commmon: &common_defines
   # This is a dirty hack to get -std=gnu99 to work. For whatever reason, doing
   # this the correct way by using :flags: does not work
-    - COMMON -std=gnu99
+    - COMMON -std=gnu11
   :test:
     - *common_defines
     - TEST
